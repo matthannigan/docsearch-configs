@@ -21,10 +21,11 @@
     "lvl4": "#markdown-document h4",
     "text": "#markdown-document p, #markdown-document li"
   },
-  "js_render": true,
   "selectors_exclude": [
     "#see-also",
     "#see-also + ul"
   ],
-  "nb_hits": 5143
+  "js_render": true,
+  "js_wait": 1,
+  "nb_hits": 6515
 }

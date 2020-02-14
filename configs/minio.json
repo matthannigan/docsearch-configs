@@ -1,7 +1,18 @@
 {
   "index_name": "minio",
   "start_urls": [
-    "https://docs.minio.io/"
+    {
+      "url": "https://docs.minio.io/cn/",
+      "tags": [
+        "cn"
+      ]
+    },
+    {
+      "url": "https://docs.minio.io/",
+      "tags": [
+        "en"
+      ]
+    }
   ],
   "stop_urls": [
     "/login$",
@@ -21,7 +32,7 @@
   },
   "min_indexed_level": 1,
   "conversation_id": [
-    "292357583"
+    "319668648"
   ],
-  "nb_hits": 2195
+  "nb_hits": 9250
 }

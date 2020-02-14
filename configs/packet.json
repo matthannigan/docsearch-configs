@@ -1,28 +1,30 @@
 {
   "index_name": "packet",
   "start_urls": [
-    "https://help.packet.net/quick-start",
-    "https://help.packet.net/faq",
-    "https://help.packet.net/technical",
-    "https://help.packet.net/solutions",
-    "https://help.packet.net/devops"
+    "https://www.packet.com/developers/docs/",
+    "https://www.packet.com/developers/api/",
+    "https://www.packet.com/resources/guides/"
   ],
-  "stop_urls": [
-    "https://help.packet.net/$",
-    "https://help.packet.net/quick-start$",
-    "https://help.packet.net/faq$",
-    "https://help.packet.net/technical$",
-    "https://help.packet.net/solutions$",
-    "https://help.packet.net/devops$"
-  ],
+  "stop_urls": [],
   "selectors": {
-    "lvl0": ".content h2",
-    "lvl1": ".content h4",
-    "text": ".content p, .content li"
+    "lvl0": {
+      "selector": "#sidebar .stick_in_parent > .active > a",
+      "global": true,
+      "default_value": "Documentation"
+    },
+    "lvl1": {
+      "selector": "#sidebar .active .active > a",
+      "global": true,
+      "default_value": "Documentation"
+    },
+    "lvl2": "article h1",
+    "lvl3": "article h2",
+    "lvl4": "article h3",
+    "lvl5": "article h4",
+    "text": "article p, article li"
   },
-  "min_indexed_level": 1,
   "conversation_id": [
-    "377547997"
+    "673723252"
   ],
-  "nb_hits": 970
+  "nb_hits": 2251
 }

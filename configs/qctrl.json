@@ -1,0 +1,20 @@
+{
+  "index_name": "qctrl",
+  "start_urls": [
+    "https://docs.q-ctrl.com/"
+  ],
+  "stop_urls": [],
+  "selectors": {
+    "lvl0": "main.DocSearch-content h1",
+    "lvl1": "main.DocSearch-content h2",
+    "lvl2": "main.DocSearch-content h3",
+    "lvl3": "main.DocSearch-content h4",
+    "lvl4": "main.DocSearch-content h5",
+    "lvl5": "main.DocSearch-content h6",
+    "text": "main.DocSearch-content p, main.DocSearch-content li, main.DocSearch-content figcaption"
+  },
+  "conversation_id": [
+    "644148907"
+  ],
+  "nb_hits": 747
+}

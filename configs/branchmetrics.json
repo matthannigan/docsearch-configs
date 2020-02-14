@@ -1,9 +1,36 @@
 {
   "index_name": "branchmetrics",
   "start_urls": [
-    "https://docs.branch.io/"
+    {
+      "url": "https://docs.branch.io/(?P<lang>.*?)/",
+      "variables": {
+        "lang": [
+          "ko",
+          "ja",
+          "zh"
+        ]
+      },
+      "extra_attributes": {
+        "lang": [
+          "en"
+        ],
+        "version": [
+          "latest"
+        ]
+      }
+    },
+    {
+      "url": "https://docs.branch.io/",
+      "extra_attributes": {
+        "lang": [
+          "en"
+        ],
+        "version": [
+          "latest"
+        ]
+      }
+    }
   ],
-  "stop_urls": [],
   "sitemap_urls": [
     "https://docs.branch.io/sitemap.xml"
   ],
@@ -19,7 +46,7 @@
     "lvl3": "article.md-content__inner h3",
     "lvl4": "article.md-content__inner h4",
     "lvl5": "article.md-content__inner h5",
-    "text": "article.md-content__inner p, article.md-content__inner li"
+    "text": "article.md-content__inner p"
   },
   "selectors_exclude": [
     "#next-steps",
@@ -28,8 +55,15 @@
     "#disqus_thread",
     "#__comments"
   ],
+  "custom_settings": {
+    "attributesForFaceting": [
+      "lang",
+      "version",
+      "tags"
+    ]
+  },
   "conversation_id": [
     "597089613"
   ],
-  "nb_hits": 10126
+  "nb_hits": 88519
 }

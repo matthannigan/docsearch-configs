@@ -5,6 +5,10 @@
       "url": "https://apereo.github.io/cas/(?P<version>.*?)/",
       "variables": {
         "version": [
+          "6.2.x",
+          "6.1.x",
+          "6.0.x",
+          "5.3.x",
           "5.2.x",
           "5.1.x",
           "5.0.x",
@@ -37,5 +41,5 @@
     "558603877"
   ],
   "scrap_start_urls": false,
-  "nb_hits": 22830
+  "nb_hits": 40710
 }

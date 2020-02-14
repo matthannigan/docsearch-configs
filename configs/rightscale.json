@@ -1,10 +1,10 @@
 {
   "index_name": "rightscale",
   "start_urls": [
-    "http://docs.rightscale.com/"
+    "http://docs.rightscale.com/",
+    "http://docs.rightscale.com/policies/"
   ],
   "stop_urls": [
-    "http://docs.rightscale.com/policies.*",
     "http://docs.rightscale.com/platform/roadmap.*"
   ],
   "selectors": {
@@ -43,5 +43,5 @@
   "conversation_id": [
     "426492916"
   ],
-  "nb_hits": 48601
+  "nb_hits": 49244
 }

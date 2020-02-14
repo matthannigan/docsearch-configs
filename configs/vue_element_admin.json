@@ -1,45 +1,34 @@
 {
   "index_name": "vue_element_admin",
   "start_urls": [
-    {
-      "url": "https://panjiachen.github.io/vue-element-admin-site/#/(?P<lang>.*?)/",
-      "variables": {
-        "lang": [
-          "zh-cn"
-        ]
-      }
-    },
-    {
-      "url": "https://panjiachen.github.io/vue-element-admin-site/",
-      "extra_attributes": {
-        "lang": [
-          "en"
-        ]
-      }
-    }
+    "https://panjiachen.github.io/vue-element-admin-site/"
   ],
   "stop_urls": [
     "\\?",
     "/donate"
   ],
   "selectors": {
-    "lvl0": {
-      "selector": "//div[contains(@class, 'sidebar-nav')]//li[contains(@class, 'active')][1]/preceding::p[1]",
+    "lvl0": ".content h1",
+    "lvl1": ".content h2",
+    "lvl2": ".content h3",
+    "lvl3": ".content h4",
+    "lvl4": ".content h5",
+    "text": ".content p, .content li",
+    "lang": {
+      "selector": "/html/@lang",
       "type": "xpath",
       "global": true,
-      "default_value": "Documentation"
-    },
-    "lvl1": ".markdown-section h1",
-    "lvl2": ".markdown-section h2",
-    "lvl3": ".markdown-section h3",
-    "lvl4": ".markdown-section h4",
-    "lvl5": ".markdown-section h5",
-    "text": ".markdown-section p, .markdown-section li"
+      "default_value": "en-US"
+    }
   },
-  "use_anchors": true,
-  "js_render": true,
+  "custom_settings": {
+    "attributesForFaceting": [
+      "lang"
+    ]
+  },
+  "strip_chars": " .,;:#",
   "conversation_id": [
     "589544845"
   ],
-  "nb_hits": 897
+  "nb_hits": 2199
 }
